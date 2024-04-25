@@ -8,17 +8,18 @@
     <style>
         div {
             border: 1px solid rgb(45, 174, 224);
-			vertical-align: middle;
-        }
-        body > div {
             width: 600px;
             margin: -175px 0 0 -300px;
-			position: absolute;
+            position: absolute;
             top: 50%;
             left: 50%;
             height: 350px;
-			
-        }  
+            line-height: 350px; /* Выравнивание текста по вертикали */
+        }
+        p, span {
+            display: inline-block; /* Блочный стиль для текста */
+            line-height: 350px; /* Выравнивание текста по вертикали */
+        }
     </style>
 </head>
 <body>

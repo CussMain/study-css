@@ -6,7 +6,16 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
-        /* здесь стили */
+        div {
+            float: left; /* Свойство для плавания элементов */
+            width: 50%; /* Установите ширину так, чтобы элементы могли располагаться в два ряда */
+            height: 100px; /* Установите высоту для демонстрации */
+            border: 1px solid black; /* Добавьте границу для визуализации */
+            box-sizing: border-box; /* Учитываем границу в ширине и высоте элемента */
+        }
+        div:nth-child(3n) {
+            clear: left; /* Очистка плавания для каждого второго элемента, чтобы начать новый ряд */
+        }
     </style>
 </head>
 <body>

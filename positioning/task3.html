@@ -6,7 +6,24 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
-        /* здесь стили */
+        .DivA {
+            top: 0; /* Расположение элемента А в верхней части элемента В */
+            left: 0; /* Расположение элемента А в левой части элемента В */
+            width: 100px; /* Установите ширину для демонстрации */
+            height: 100px; /* Установите высоту для демонстрации */
+            position: absolute; /* Позиционирование элемента А относительно элемента В */
+            background-color: red; /* Цвет для визуализации */
+        }
+        .DivB {
+            width: 200px; /* Установите ширину для демонстрации */
+            height: 200px; /* Установите высоту для демонстрации */
+            position: relative; /* Позиционирование элемента В относительно его нормального положения */
+            background-color: blue; /* Цвет для визуализации */
+        }
+        p {
+            color: aliceblue;
+            text-align: right;
+        }
     </style>
 </head>
 <body>
@@ -19,8 +36,8 @@
 
 -->
 
-<div class="DivA">Элемент А</div>
-<div class="DivB">Элемент В</div>
+<div class="DivB"><p>Элемент В</p></div>
+<div class="DivA"><p>Элемент А</p></div>
 
 </body>
 </html>
