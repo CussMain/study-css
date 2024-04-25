@@ -19,14 +19,54 @@
     <title>CSS: свойство overflow</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
-      
-     /* здесь стили */
-
-
+        .div-container {
+            width: 200px; /* Установите ширину для демонстрации прокрутки */
+            height: 200px; /* Установите высоту для демонстрации прокрутки */
+            border: 1px solid black;
+        }
+        .div-container div {
+            width: 400px; /* Установите ширину больше, чем у родительского div, чтобы создать переполнение */
+            height: 400px; /* Установите высоту больше, чем у родительского div, чтобы создать переполнение */
+            border: 1px solid red;
+        }
+        .div-container:nth-child(1) {
+            overflow-x: scroll; /* Горизонтальная прокрутка */
+            overflow-y: hidden;
+        }
+        .div-container:nth-child(2) {
+            overflow-y: scroll; /* Вертикальная прокрутка */
+            overflow-x: hidden;
+        }
+        .div-container:nth-child(3) {
+            overflow-x: scroll; /* Горизонтальная прокрутка */
+            overflow-y: hidden;
+        }
+        .div-container:nth-child(4) {
+            overflow-y: scroll; /* Вертикальная прокрутка */
+            overflow-x: hidden;
+        }
+        .div-container:nth-child(5) {
+            overflow-x: scroll; /* Горизонтальная прокрутка */
+            overflow-y: hidden;
+        }
     </style>
 </head>
 <body>
-   <!-- здесь блоки вложенные друг в друга -->
+    <div class="div-container">
+        <div></div>
+    </div>
+    <div class="div-container">
+        <div></div>
+    </div>
+    <div class="div-container">
+        <div></div>
+    </div>
+    <div class="div-container">
+        <div></div>
+    </div>
+    <div class="div-container">
+        <div></div>
+    </div>
 </body>
 </html>
 

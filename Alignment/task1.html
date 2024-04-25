@@ -9,19 +9,24 @@
     <style>
         div {
             border: 1px solid rgb(45, 174, 224);
-			
+            display: flex; /* Добавлено для использования flexbox */
+            justify-content: center; /* Выравнивание по горизонтали */
+            align-items: center; /* Выравнивание по вертикали */
+            height: 350px; /* Высота достаточна для выравнивания */
+            margin-top: 120px;
         }
         body > div {
-			position: relative;
+            position: relative;
             width: 50%;
-            height: 350px;
-            margin-top: 120px;
         }
         div > div {
             background: rgb(245, 125, 125);
             width: 100px;
             height: 100px;
-			
+        }
+        .DivA {
+            display: block; /* Блочный стиль для DivA */
+            margin: auto; /* Автоматические отступы слева и справа для выравнивания по горизонтали */
         }
     </style>
 </head>

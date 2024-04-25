@@ -18,16 +18,32 @@
     <title>CSS: свойство float, sizes</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <style>
-    /* здесь стили */
+        .parent {
+            width: 300px; /* Ширина родительского div, чтобы вместить 3 дочерних div в одном ряду */
+            min-height: 200px; /* Высота родительского div, больше высоты одного дочернего div в 2 раза */
+            max-height: max-content;
+            border: 1px solid black;
+            float: left; /* Свойство float для расположения дочерних div в одном ряду */
+        }
+        .parent div {
+            width: 100px; /* Ширина каждого дочернего div */
+            height: 100px; /* Высота каждого дочернего div */
+            float: left;
+            border: 1px solid red;
+        }
     </style>
 </head>
 <body>
-<div class="parent">
-<!-- здесь блоки, внутри можно просто цифры 1.. 6 -->
-</div>
+    <div class="parent">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
 </body>
 </html>
-
 
 <!--
 
